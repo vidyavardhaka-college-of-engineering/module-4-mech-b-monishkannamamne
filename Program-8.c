@@ -14,13 +14,13 @@ void main()
    printf(" Input %d number of elements in the array : \n",n);
    for(i=0;i<n;i++)
       {
-	  printf(" element - %d : ",i+1);
+	 
 	  scanf("%d",&arr1[i]);
 	  } 	
   pt = arr1; // pt store the base address of array arr1
   for (i = 0; i < n; i++) {
-      // write the code to calculate sum
-     
-   }
+    sum=sum+*pt;  // write the code to calculate sum
+    pt++; 
+  }
   printf("Sum=%d",sum);
 }

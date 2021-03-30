@@ -6,18 +6,20 @@
 #include <stdio.h>
 int main()
 {
-   int arr1[25], i,n;
+   int arr1[25], i,n,*ptr;
    printf("Input the number of elements to store in the array :");
    scanf("%d",&n);
-   printf("Input elements of the array :\n",n);
+   printf("Input elements of the array :%d\n",n);
    for(i=0;i<n;i++)
       {
 	   scanf(" %d",&arr1[i]);
 	  }
+    ptr=arr1;
    printf("The elements you entered are : \n");
    for(i=0;i<n;i++)
       {
-	 //print the array elements
+	 printf("%d ",*ptr);
+   ptr++;//print the array elements
 	  }
 	   return 0;
 }
